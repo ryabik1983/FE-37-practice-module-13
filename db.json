@@ -1,0 +1,36 @@
+{
+    "users": [
+        {
+          "name": "Moore Hensley",
+          "email": "moorehensley@indexia.com",
+          "eyeColor": "blue",
+          "isActive": "false",
+          "balance": 2811,
+          "gender": "male"
+        },
+        {
+          "name": "Sharlene Bush",
+          "email": "sharlenebush@tubesys.com",
+          "eyeColor": "blue",
+          "isActive": "true",
+          "balance": 3821,
+          "gender": "female"
+        },
+        {
+          "name": "Ross Vazquez",
+          "email": "rossvazquez@xinware.com",
+          "eyeColor": "green",
+          "isActive": "false",
+          "balance": 3793,
+          "gender": "male"
+        },
+        {
+          "name": "Elma Head",
+          "email": "elmahead@omatom.com",
+          "eyeColor": "green",
+          "isActive": "true",
+          "balance": 2278,
+          "gender": "female"
+        }
+    ]
+}
