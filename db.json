@@ -1,36 +1,43 @@
 {
-    "users": [
-        {
-          "name": "Moore Hensley",
-          "email": "moorehensley@indexia.com",
-          "eyeColor": "blue",
-          "isActive": "false",
-          "balance": 2811,
-          "gender": "male"
-        },
-        {
-          "name": "Sharlene Bush",
-          "email": "sharlenebush@tubesys.com",
-          "eyeColor": "blue",
-          "isActive": "true",
-          "balance": 3821,
-          "gender": "female"
-        },
-        {
-          "name": "Ross Vazquez",
-          "email": "rossvazquez@xinware.com",
-          "eyeColor": "green",
-          "isActive": "false",
-          "balance": 3793,
-          "gender": "male"
-        },
-        {
-          "name": "Elma Head",
-          "email": "elmahead@omatom.com",
-          "eyeColor": "green",
-          "isActive": "true",
-          "balance": 2278,
-          "gender": "female"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Mooooooooooore Hensley",
+      "email": "moorehensley@indexia.com",
+      "eyeColor": "blue",
+      "isActive": "false",
+      "balance": 2811,
+      "gender": "male"
+    },
+    {
+      "id": 3,
+      "name": "Ross Vazquez",
+      "email": "rossvazquez@xinware.com",
+      "eyeColor": "green",
+      "isActive": "false",
+      "balance": 3793,
+      "gender": "male"
+    },
+    {
+      "id": 4,
+      "name": "Elma Head",
+      "email": "elmahead@omatom.com",
+      "eyeColor": "green",
+      "isActive": "true",
+      "balance": 2278,
+      "gender": "female"
+    },
+    {
+      "id": 5
+    },
+    {
+      "name": "Ryabovol",
+      "email": "ryabovol_saha@meta.ua",
+      "eyeColor": "brown",
+      "isActive": "true",
+      "balance": 5005,
+      "gender": "male",
+      "id": 6
+    }
+  ]
 }

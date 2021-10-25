@@ -152,13 +152,48 @@
 
 // (x) => x + 1
 
-var faker = require('faker');
+// var faker = require('faker');
 
-    var randomName = faker.name.findName(); // Rowan Nikolaus
-    var randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
-    var randomCard = faker.helpers.createCard();
-    console.log(randomName);
-    console.log(randomEmail);
-    console.log(randomCard);
+//     var randomName = faker.name.findName(); // Rowan Nikolaus
+//     var randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
+//     var randomCard = faker.helpers.createCard();
+//     console.log(randomName);
+//     console.log(randomEmail);
+//     console.log(randomCard);
 
+    // fetch('http://localhost:3000/users')
+    // .then(res => res.json())
+    // .then(console.log())
+
+    const BASE_URL = 'http://localhost:3000/users';
+    // function fetchUsers () {
+    //     return fetch(`http://localhost:3000/users`)
+    //     .then(res => res.json())
+    //     // .then(console.log())
+    // }
+    // function fetchUserById (userId) {
+    //     return fetch(`http://localhost:3000/users/${userId}`)
+    //     .then(res => res.json())
+        
+    // }
+    //  fetchUsers();
+    //  fetchUserById(1);
      // random contact card containing many properties
+     const newUser = {
+        "name": "Ryabik",
+        "email": "ryabovol_saha@meta.ua",
+        "eyeColor": "black",
+        "isActive": "true",
+        "balance": 5005,
+        "gender": "male"
+     }
+     const options = {
+         method: 'POST',
+         headers: {
+             "Content-Type": "application/json"
+         },
+         body: JSON.stringify(newUser),
+     }
+     fetch (BASE_URL, options)
+     .then(res => res.json())
+     .then(console.log);
