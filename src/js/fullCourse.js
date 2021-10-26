@@ -161,6 +161,7 @@
 //     console.log(randomEmail);
 //     console.log(randomCard);
 
+<<<<<<< Updated upstream
     // fetch('http://localhost:3000/users')
     // .then(res => res.json())
     // .then(console.log())
@@ -197,3 +198,15 @@
      fetch (BASE_URL, options)
      .then(res => res.json())
      .then(console.log);
+=======
+     // random contact card containing many properties
+     try {
+         console.log('До ошибки!');
+         myVar;
+         console.log('После ошибки!');
+
+     } catch (error) {
+         console.log('Ошибка!');
+     }
+    console.log('После try');
+>>>>>>> Stashed changes
