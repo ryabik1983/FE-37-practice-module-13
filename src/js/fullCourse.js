@@ -161,12 +161,11 @@
 //     console.log(randomEmail);
 //     console.log(randomCard);
 
-<<<<<<< Updated upstream
     // fetch('http://localhost:3000/users')
     // .then(res => res.json())
     // .then(console.log())
 
-    const BASE_URL = 'http://localhost:3000/users';
+    // const BASE_URL = 'http://localhost:3000/users';
     // function fetchUsers () {
     //     return fetch(`http://localhost:3000/users`)
     //     .then(res => res.json())
@@ -180,33 +179,51 @@
     //  fetchUsers();
     //  fetchUserById(1);
      // random contact card containing many properties
-     const newUser = {
-        "name": "Ryabik",
-        "email": "ryabovol_saha@meta.ua",
-        "eyeColor": "black",
-        "isActive": "true",
-        "balance": 5005,
-        "gender": "male"
-     }
-     const options = {
-         method: 'POST',
-         headers: {
-             "Content-Type": "application/json"
-         },
-         body: JSON.stringify(newUser),
-     }
-     fetch (BASE_URL, options)
-     .then(res => res.json())
-     .then(console.log);
-=======
+    //  const newUser = {
+    //     "name": "Ryabik",
+    //     "email": "ryabovol_saha@meta.ua",
+    //     "eyeColor": "black",
+    //     "isActive": "true",
+    //     "balance": 5005,
+    //     "gender": "male"
+    //  }
+    //  const options = {
+    //      method: 'POST',
+    //      headers: {
+    //          "Content-Type": "application/json"
+    //      },
+    //      body: JSON.stringify(newUser),
+    //  }
+    //  fetch (BASE_URL, options)
+    //  .then(res => res.json())
+    //  .then(console.log);
      // random contact card containing many properties
-     try {
-         console.log('До ошибки!');
-         myVar;
-         console.log('После ошибки!');
+    //  try {
+    //      console.log('До ошибки!');
+// setTimeout (() => {
+    // try {
+    //     console.log('До ошибки!');
+    // myVar}
+    // catch (error) {
+    //     console.log('Ошибка!');
+    //     console.log(error.stack);
+    // }
+    // console.log('После ошибки!');
+    // // }, 1000); 
 
-     } catch (error) {
-         console.log('Ошибка!');
-     }
-    console.log('После try');
->>>>>>> Stashed changes
+    // console.log('После try');
+const validJSON = '{"name" : "Mango", "age" : 3}';
+const inValidJSON = '{chudo}';
+
+try {
+    console.log(JSON.parse(validJSON));
+
+    console.log(1);
+    console.log(JSON.parse(inValidJSON));
+    console.log(2);    
+} catch (error) {
+    console.log('Error!');
+}
+
+console.log('After Try-Catch!');
+
