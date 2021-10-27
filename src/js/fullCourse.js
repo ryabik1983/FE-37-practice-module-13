@@ -197,7 +197,6 @@
     //  fetch (BASE_URL, options)
     //  .then(res => res.json())
     //  .then(console.log);
-<<<<<<< Updated upstream
      // random contact card containing many properties
     //  try {
     //      console.log('До ошибки!');
@@ -228,14 +227,12 @@ try {
 
 console.log('After Try-Catch!');
 
-=======
 
-    try {
-        console.log('Внутри try до error!');
-        moveB;
-        console.log('Внутри try после error!');
-    } catch (error) {
-     console.log('Ошибка!');   
-    }
-    console.log('После try!');
->>>>>>> Stashed changes
+    // try {
+    //     console.log('Внутри try до error!');
+    //     moveB;
+    //     console.log('Внутри try после error!');
+    // } catch (error) {
+    //  console.log('Ошибка!');   
+    // }
+    // console.log('После try!');
