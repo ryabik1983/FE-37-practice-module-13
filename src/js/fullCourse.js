@@ -212,20 +212,20 @@
     // // }, 1000); 
 
     // console.log('После try');
-const validJSON = '{"name" : "Mango", "age" : 3}';
-const inValidJSON = '{chudo}';
+// const validJSON = '{"name" : "Mango", "age" : 3}';
+// const inValidJSON = '{chudo}';
 
-try {
-    console.log(JSON.parse(validJSON));
+// try {
+//     console.log(JSON.parse(validJSON));
 
-    console.log(1);
-    console.log(JSON.parse(inValidJSON));
-    console.log(2);    
-} catch (error) {
-    console.log('Error!');
-}
+//     console.log(1);
+//     console.log(JSON.parse(inValidJSON));
+//     console.log(2);    
+// } catch (error) {
+//     console.log('Error!');
+// }
 
-console.log('After Try-Catch!');
+// console.log('After Try-Catch!');
 
 
     // try {
@@ -236,3 +236,31 @@ console.log('After Try-Catch!');
     //  console.log('Ошибка!');   
     // }
     // console.log('После try!');
+async function getFruit (name) {
+    const fruits = {
+        strawberry: 'strawberry',
+        kiwi: 'kiwi',
+        apple: 'apple'
+    }
+ return  new Promise ((resolve, reject) => setTimeout(() => reject(fruits[name]), 500));   
+};
+// getFruit('strawberry').then(kiwi => console.log(kiwi));
+
+async function aMakeSmoosie () {
+    try {
+        console.time ('aMakeSmoosie');
+        const apple = getFruit('apple');
+        // console.log(apple);
+        const kiwi = getFruit('kiwi');
+        // console.log(kiwi);
+        const fruits = await Promise.all([apple, kiwi])
+        console.log(fruits);
+        console.timeEnd ('aMakeSmoosie')    
+    } catch (error) {
+    console.log('Error' + error);    
+    }
+}
+// console.log(1);
+aMakeSmoosie();
+// console.log(2);
+// console.log(3);
