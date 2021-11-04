@@ -242,7 +242,7 @@ async function getFruit (name) {
         kiwi: 'kiwi',
         apple: 'apple'
     }
- return  new Promise ((resolve, reject) => setTimeout(() => reject(fruits[name]), 500));   
+ return  new Promise ((resolve, reject) => setTimeout(() => resolve(fruits[name]), 500));   
 };
 // getFruit('strawberry').then(kiwi => console.log(kiwi));
 
@@ -256,11 +256,12 @@ async function aMakeSmoosie () {
         const fruits = await Promise.all([apple, kiwi])
         console.log(fruits);
         console.timeEnd ('aMakeSmoosie')    
+        return fruits;
     } catch (error) {
     console.log('Error' + error);    
     }
-}
+};
 // console.log(1);
-aMakeSmoosie();
+aMakeSmoosie().then(fruits => console.log(fruits));
 // console.log(2);
 // console.log(3);
